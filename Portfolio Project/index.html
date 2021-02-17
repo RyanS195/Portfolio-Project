@@ -7,24 +7,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/Styles.css">
+    <!-- <script src="JS/Script.js"></script> -->
   </head>
   <body>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#top" class="topNavItem navItem">About Me</a></li>
+        <li><a href="#projects" class="firstNavItem navItem">Projects</a></li>
+        <li><a href="#workexperience" class="secondNavItem navItem">Work Experience</a></li>
+        <li><a href="#education" class="thirdNavItem navItem">Education</a></li>
+        <li><a href="#bottom" class="bottomNavItem navItem">Contact Me</a></li>
+      </ul>
+    </nav>
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header>
-        <div class="content-wrap">
-          <h1>Ryan Steinmetz</h1>
-          <h2>Techranger at UCF</h2>
-          <img src="images/Ryan_Steinmetz.jpg">
+        <section class="top main" id="top">
+          <div class="content-wrap">
+            <h1>Ryan Steinmetz</h1>
+            <h2>Techranger at UCF</h2>
+            <img src="images/Ryan_Steinmetz.jpg">
 
 
-          <p>Add your profile copy here. Add more paragraphs or links as needed. Here is some dummy text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.</p>
-          <p>Add another paragraph if needed.</p>
-        </div>
+            <p>Hi, my name is Ryan Steinmetz, I am currently 19 years old and a sophomore at the University of Central Florida. I started my programming journey in my eight grade "STEM" class where we played around with some basic python and code.org. Next, in high school I took AP Computer Science where I learned basic Java. Now I am pursuing a Computer Science degree where I have taken courses and learned about Java, C, Object Oriented Programming, Data Structures, Algorithms and more. </p>
+
+          </div>
+        </section>
       </header>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section class="projects">
+      <section class="projects main" , id="projects">
         <div class="content-wrap divider">
           <h2>Featured Projects</h2>
         <!--  <p>View selected projects below. More information can be found at <a href="http://christinatruong.com">christinatruong.com</a>.</p>  -->
@@ -35,9 +47,9 @@
             <h3>Publix Web Scraper</h3>
             <p>For this project, I created a web scraper for Publix's website. Every week when the new weekly ad comes out my program scrapes it and if any of them items I selected ahead of time are on sale it will then format it and send a text message to me. Technologies used listed below: </p>
             <ul>
+              <li>Python</li>
               <li>Twilio</li>
               <li>Beautiful Soup library</li>
-              <li>Schedule library</li>
               <li>Schedule library</li>
             </ul>
             <a class ="btn" href="https://github.com/RyanS195/Publix-Web-Scraper" target="_blank">View project</a>
@@ -47,7 +59,7 @@
       </section>
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section class="work-experience">
+      <section class="workexperience main" id="workexperience">
         <div class="content-wrap item-details divider">
           <h2>Work Experience</h2>
 
@@ -121,7 +133,7 @@
       </section>
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section class="education">
+      <section class="education main" id="education">
         <div class="content-wrap item-details">
           <h2>Education</h2>
 
@@ -129,29 +141,115 @@
           <section>
             <h3>The University of Central Florida</h3>
             <p>Major: Computer Science</p>
+            <p>First Semester: Fall 2019</p>
             <p>Expected Graduation: Spring 2023 </p>
-            <p>I am currently attending UCF where I am pursing my degree in Computer Science while also working a part time job as a Software Developer for UCF </p>
+            <p>I am currently attending UCF where I am pursing my bachelor's degree in Computer Science while also working a part time job as a Software Developer for UCF </p>
+            <div class="classesTaken"></div>
+            <p>Important Classes Taken: Data Strucutres, Algorithms, Object Oriented Programming, Intro to Programming in C, Security in Computing, Computer Logic & Organization, Systems Software, Intro to Discrete and Discrete Computational Structures.</p>
+            <div class="marginlink">
+              <a href="https://www.ucf.edu" target="_blank">The University of Central Florida </a>
+            </div>
           </section>
           <!-- End of School block. -->
           <section>
             <h3>Saint Thomas Aquinas High School</h3>
+            <p>First Semester: Fall 2015</p>
             <p>Graduated: May 2019</p>
             <p>I attended Saint Thomas Aquinas for high school where I was a honor roll student who also competed in Cross Country, and Track and Field. </p>
+            <div class="classesTaken"></div>
+            <p>Important Classes Taken: AP Computer Science A, AP Physics 1, AP US History, AP Statistics, AP Calculus 1.</p>
+            <div class="Achievements"></div>
+            <p>Achievements: Two time Cross Country 7A State Champion, Deans honor roll 10th - 12th grade</p>
+            <div class="marginlink">
+              <a href="https://www.aquinas-sta.org" target="_blank">Saint Thomas Aquinas High School</a>
+            </div>
           </section>
           <!-- End of School block. -->
         </div>
       </section>
 
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+
       <footer>
-        <div class="content-wrap">
-          <h2>Let's Keep in Touch!</h2>
-          <ul>
-            <li><a href="mailto:Ryanfsteinmetz@gmail.com">Ryanfsteinmetz@gmail.com</a></li>
-            <li><a href="https://www.linkedin.com/in/ryan-steinmetz-797741164" target="_blank">LinkedIn</a></li>
-          </ul>
-        </div>
+        <section class="bottom main" id="bottom">
+          <div class="content-wrap">
+            <h2>Let's Keep in Touch!</h2>
+            <ul class="Contact">
+              <li><a href="mailto:Ryanfsteinmetz@gmail.com">Ryanfsteinmetz@gmail.com</a></li>
+              <li><a href="https://www.linkedin.com/in/ryan-steinmetz-797741164" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+        </section>
       </footer>
     </main>
   </body>
 </html>
+
+<script>
+
+const sectionOne = document.querySelectorAll(".main");
+
+function selectElementByClass(className) {
+  return document.querySelector(`.${className}`);
+}
+
+const sections = [
+  selectElementByClass('top'),
+  selectElementByClass('projects'),
+  selectElementByClass('workexperience'),
+  selectElementByClass('education'),
+  selectElementByClass('bottom'),
+];
+
+const navItems = {
+  top: selectElementByClass('topNavItem'),
+  projects: selectElementByClass('firstNavItem'),
+  workexperience: selectElementByClass('secondNavItem'),
+  education: selectElementByClass('thirdNavItem'),
+  bottom: selectElementByClass('bottomNavItem'),
+};
+
+const options = {
+  root: null,
+  rootMargin: '157px',
+  threshold: .69,
+};
+
+const observer = new IntersectionObserver( function(entries,
+   observer) {
+     entries.forEach(entry => {
+
+       console.log(entry.isIntersecting);
+       console.log(entry.target.id);
+
+       if(entry.isIntersecting ) {
+
+          console.log(entry.intersectionRatio);
+         //console.log(entry.target.className);
+         //console.log(entry.target.id);
+
+         const navItem = navItems[entry.target.id];
+         //console.log(navItem);
+         navItem.classList.add('active');
+        //console.log(entry.target.class);
+        Object.values(navItems).forEach((item) => {
+          if(item != navItem) {
+            item.classList.remove('active');
+          }
+        });
+       }
+     });
+   }, options);
+
+   //console.log(sectionOne);
+   //console.log(navItems);
+   sectionOne.forEach(se => {
+     //console.log(navItems);
+       observer.observe(se);
+   })
+
+
+
+
+
+</script>
